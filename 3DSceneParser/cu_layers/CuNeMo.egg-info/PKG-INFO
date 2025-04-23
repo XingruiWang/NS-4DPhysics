@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: CuNeMo
+Version: 0.6
+Summary: Cuda tools for NeMo
+Author: Angtian Wang
+License: MIT License

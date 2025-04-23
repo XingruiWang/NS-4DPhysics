@@ -1,0 +1,14 @@
+setup.py
+/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/ext.cpp
+/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/fast_init/fast_init.cu
+/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/gather_features/gather_features.cu
+/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/mask_weight/mask_weight.cu
+CuNeMo/__init__.py
+CuNeMo/fast_init.py
+CuNeMo/gather_features.py
+CuNeMo/mask_weight.py
+CuNeMo.egg-info/PKG-INFO
+CuNeMo.egg-info/SOURCES.txt
+CuNeMo.egg-info/dependency_links.txt
+CuNeMo.egg-info/requires.txt
+CuNeMo.egg-info/top_level.txt

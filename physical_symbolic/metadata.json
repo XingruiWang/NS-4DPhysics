@@ -1,0 +1,387 @@
+{
+    "dataset": "SuperCLEVR-Physics",
+    "types": {
+        "Object": null,
+        "ObjectSet": null,
+        "CollisionEvent": null,
+        "CollisionEventSet": null,
+        "Direction": [
+            "left",
+            "right",
+            "up",
+            "down",
+            "front",
+            "back"
+        ],
+        "Integer": null,
+        "Bool": null,
+        "FrameID": null,
+        "Shape": [
+            "airliner",
+            "fighter",
+            "jet",
+            "mountain",
+            "tandem",
+            "utility",
+            "articulated",
+            "double",
+            "school",
+            "minivan",
+            "sedan",
+            "suv",
+            "truck",
+            "wagon",
+            "chopper",
+            "cruiser",
+            "dirtbike",
+            "scooter"
+        ],
+        "Color": [
+            "gray",
+            "red",
+            "blue",
+            "green",
+            "brown",
+            "purple",
+            "cyan",
+            "yellow"
+        ],
+        "Shapename": {
+            "suv": "suv",
+            "wagon": "wagon",
+            "minivan": "minivan",
+            "sedan": "sedan",
+            "truck": "truck",
+            "addi": "regular car",
+            "articulated": "articulated bus",
+            "regular": "regular bus",
+            "double": "double bus",
+            "school": "school bus",
+            "chopper": "chopper",
+            "dirtbike": "dirtbike",
+            "scooter": "scooter",
+            "cruiser": "cruiser",
+            "jet": "jet",
+            "fighter": "fighter",
+            "biplane": "biplane",
+            "airliner": "airliner",
+            "road": "road bike",
+            "utility": "utility bike",
+            "mountain": "mountain bike",
+            "tandem": "tandem bike"
+        }
+    },
+    "functions": [
+        {
+            "name": "scene",
+            "inputs": [],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "filter_color",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Color"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "filter_shape",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Shape"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "unique",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "output": "Object",
+            "terminal": false,
+            "properties": []
+        },
+        {
+            "name": "relate",
+            "inputs": [
+                "Object"
+            ],
+            "side_inputs": [
+                "Relation"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "union",
+            "inputs": [
+                "ObjectSet",
+                "ObjectSet"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "intersect",
+            "inputs": [
+                "ObjectSet",
+                "ObjectSet"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "count",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "output": "Integer",
+            "terminal": true
+        },
+        {
+            "name": "query_shape",
+            "inputs": [
+                "Object"
+            ],
+            "output": "Shape",
+            "terminal": true
+        },
+        {
+            "name": "query_color",
+            "inputs": [
+                "Object"
+            ],
+            "output": "Color",
+            "terminal": true
+        },
+        {
+            "name": "exist",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "equal_color",
+            "inputs": [
+                "Color",
+                "Color"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "equal_shape",
+            "inputs": [
+                "Shape",
+                "Shape"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "equal_integer",
+            "inputs": [
+                "Integer",
+                "Integer"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "same_color",
+            "inputs": [
+                "Object"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "same_shape",
+            "inputs": [
+                "Object"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        },
+        {
+            "name": "filter",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Shape",
+                "Color"
+            ],
+            "output": "ObjectSet",
+            "terminal": false,
+            "template_only": true
+        },
+        {
+            "name": "filter_unique",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Shape",
+                "Color"
+            ],
+            "output": "Object",
+            "terminal": false,
+            "template_only": true
+        },
+        {
+            "name": "filter_count",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Shape",
+                "Color"
+            ],
+            "output": "Integer",
+            "terminal": true,
+            "template_only": true
+        },
+        {
+            "name": "filter_exist",
+            "inputs": [
+                "ObjectSet"
+            ],
+            "side_inputs": [
+                "Shape",
+                "Color"
+            ],
+            "output": "Bool",
+            "terminal": true,
+            "template_only": true
+        },
+        {
+            "name": "filter_same_shape",
+            "inputs": [
+                "Object"
+            ],
+            "output": "Object",
+            "terminal": false,
+            "template_only": true
+        },
+        {
+            "name": "come_in_frame",
+            "inputs": [
+                "Object"
+            ],
+            "output": "FrameID",
+            "terminal": false,
+            "template_only": false
+        },
+        {
+            "name": "query_moving",
+            "inputs": [
+                "Object",
+                "FrameID"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "query_moving_fast",
+            "inputs": [
+                "Object",
+                "FrameID"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "query_moving_direction",
+            "inputs": [
+                "Object",
+                "FrameID"
+            ],
+            "output": "Direction",
+            "terminal": true
+        },
+        {
+            "name": "greater_linear_velocities",
+            "inputs": [
+                "Object",
+                "Object",
+                "FrameID"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "less_linear_velocities",
+            "inputs": [
+                "Object",
+                "Object",
+                "FrameID"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "filter_collision",
+            "inputs": [
+                "CollisionEventSet",
+                "Object"
+            ],
+            "output": "CollisionEventSet",
+            "terminal": false,
+            "template_only": false
+        },
+        {
+            "name": "get_frame",
+            "inputs": [
+                "CollisionEvent"
+            ],
+            "output": "FrameID",
+            "terminal": false,
+            "template_only": false
+        },
+        {
+            "name": "query_engine",
+            "inputs": [
+                "Object"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "query_floating",
+            "inputs": [
+                "Object"
+            ],
+            "output": "Bool",
+            "terminal": true
+        },
+        {
+            "name": "get_col_partner",
+            "inputs": [
+                "CollisionEvent",
+                "Object"
+            ],
+            "output": "Object",
+            "terminal": false
+        },
+        {
+            "name": "get_all_col_partners",
+            "inputs": [
+                "CollisionEventSet",
+                "Object"
+            ],
+            "output": "ObjectSet",
+            "terminal": false
+        }
+    ]
+}

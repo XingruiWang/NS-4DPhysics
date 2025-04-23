@@ -1,0 +1,6 @@
+# ninja log v5
+0	26235	1695070395756897157	/data/angtian/OmniNeMoSuperClever/cu_layers/build/temp.linux-x86_64-cpython-39/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/ext.o	e6db4d4907c39487
+23	61137	1695070534685813617	/data/angtian/OmniNeMoSuperClever/cu_layers/build/temp.linux-x86_64-cpython-39/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/mask_weight/mask_weight.o	4b8f5bcb616d2d28
+23	64213	1695070537765833877	/data/angtian/OmniNeMoSuperClever/cu_layers/build/temp.linux-x86_64-cpython-39/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/gather_features/gather_features.o	d73e033601394f77
+22	64455	1695070538009835482	/data/angtian/OmniNeMoSuperClever/cu_layers/build/temp.linux-x86_64-cpython-39/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/fast_init/fast_init.o	a9a7c228a67b7b6d
+24	60877	1695070697210879914	/data/angtian/OmniNeMoSuperClever/cu_layers/build/temp.linux-x86_64-cpython-39/data/angtian/OmniNeMoSuperClever/cu_layers/CuNeMo/csrc/fast_init/fast_init.o	a9a7c228a67b7b6d

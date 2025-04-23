@@ -1,0 +1,10 @@
+exp
+vis/
+output/*
+data/*
+
+**/__pycache__/
+**/.ipynb_checkpoints
+**/.vscode
+**/.pytest
+**/*.pyc
