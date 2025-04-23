@@ -1,12 +1,14 @@
 # NS4Dynamics
 
-Official code for the NS-4DPhysics model, introduced in the paper:
+Official code for the model NS-4DPhysics: Neural-Symbolic VideoQA with Explicit 4D Scene Representation and Physical Reasoning
 
-> **NS-4DPhysics: Neural-Symbolic VideoQA with Explicit 4D Scene Representation and Physical Reasoning**
 
-This repository contains the implementation of the neural-symbolic model that performs question answering over dynamic scenes by integrating explicit 4D scene representations and physical priors.
+> **This repository contains the model part of the paper:**  
+> **_Compositional 4D Dynamic Scenes Understanding with Physics Priors for Video Question Answering (ICLR 2025)_**  
+> [[Paper link](https://arxiv.org/abs/2406.00622)]
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.00622-b31b1b.svg)](https://arxiv.org/abs/2406.00622) ![License](https://img.shields.io/github/license/XingruiWang/SuperCLEVR-Physics)
+
+[![arXiv](https://img.shields.io/badge/arXiv-2406.00622-b31b1b.svg)](https://arxiv.org/abs/2406.00622) [![Project Page](https://img.shields.io/badge/Project%20Page-DynSuperCLEVR-0a7aca?logo=globe&logoColor=white)](https://xingruiwang.github.io/projects/DynSuperCLEVR/) ![License](https://img.shields.io/github/license/XingruiWang/SuperCLEVR-Physics)
 
 
 ---
